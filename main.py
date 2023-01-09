@@ -42,7 +42,8 @@ schedule.every().day.at("02:30").do(__name__)
 
 while True:
     # print("Waiting for the mail to be sent")
+    print(datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S"))
     schedule.run_pending()
-    time.sleep(10)
+    time.sleep(30)
     
 

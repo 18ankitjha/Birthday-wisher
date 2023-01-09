@@ -38,11 +38,11 @@ def __name__():
             df.loc[i,'Year']=str(yr)+','+str(YearNow)
             df.to_excel('data.xlsx',index=False)
 
-schedule.every().day.at("21:09").do(__name__)
+schedule.every().day.at("02:30").do(__name__)
 
 while True:
     # print("Waiting for the mail to be sent")
     schedule.run_pending()
-    time.sleep(1000)
+    time.sleep(10)
     
 

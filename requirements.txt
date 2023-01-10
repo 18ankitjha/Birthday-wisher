@@ -2,3 +2,4 @@ xlrd
 openpyxl                
 requests           
 schedule
+pandas

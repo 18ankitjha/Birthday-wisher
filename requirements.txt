@@ -2,4 +2,3 @@ xlrd
 openpyxl                
 requests           
 schedule
-request
